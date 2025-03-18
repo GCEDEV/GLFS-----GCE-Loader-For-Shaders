@@ -16,28 +16,7 @@ GLFS (Graphics Loader For Shaders) is a Windows application that helps you manag
 
 - Windows 10/11
 - Minecraft Bedrock Edition
-- BetterRenderDragon (download link provided in the app)
 - Python 3.7+ (if running from source)
-
-## Installation
-
-### Option 1: Download the pre-built executable (Recommended)
-
-1. Download the latest release from the [Releases](https://github.com/yourusername/glfs/releases) page
-2. Extract the ZIP file to a location of your choice
-3. Run `GLFS.exe`
-
-### Option 2: Run from source
-
-1. Clone or download this repository
-2. Install the required dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
-3. Run the application:
-   ```
-   python src/main.py
-   ```
 
 ## Setup
 
@@ -144,7 +123,3 @@ If shaders are not working properly:
 
 - BetterRenderDragon by [ddf8196](https://github.com/ddf8196/BetterRenderDragon)
 - MaterialBinLoader included in BetterRenderDragon
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
