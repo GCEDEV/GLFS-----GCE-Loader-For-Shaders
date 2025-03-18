@@ -20,14 +20,12 @@ GLFS (Graphics Loader For Shaders) is a Windows application that helps you manag
 
 ## Setup
 
-1. Download BetterRenderDragon from its [GitHub releases page](https://github.com/ddf8196/BetterRenderDragon/releases/latest)
-2. Extract the BetterRenderDragon.zip to a location of your choice
-3. Open GLFS and go to the Settings tab
-4. Set the following paths:
+1. Open GLFS and go to the Settings tab
+2. Set the following paths:
    - Minecraft Installation Path: The path to your Minecraft Bedrock installation
    - BetterRenderDragon Path: The path where you extracted BetterRenderDragon
    - Shaders Directory: A folder where you want to store your shaders
-5. Click "Save Settings"
+3. Click "Save Settings"
 
 ## Usage
 
