@@ -1,0 +1,11 @@
+{
+    "MaterialBinLoader": {
+        "Enabled": true
+    },
+    "DeferredRendering": {
+        "Enabled": true
+    },
+    "Shaders": {
+        "Enabled": true
+    }
+}

@@ -1,0 +1,13 @@
+Error starting application: 'GLFSApp' object has no attribute 'refresh_shaders'
+Traceback (most recent call last):
+  File "C:\Users\orbie\Documents\nreb3tloader\GLFS\src\main.py", line 482, in main
+    app = GLFSApp(root)
+          ^^^^^^^^^^^^^
+  File "C:\Users\orbie\Documents\nreb3tloader\GLFS\src\main.py", line 54, in __init__
+    self.create_ui()
+  File "C:\Users\orbie\Documents\nreb3tloader\GLFS\src\main.py", line 194, in create_ui
+    self.create_home_tab(home_tab)
+  File "C:\Users\orbie\Documents\nreb3tloader\GLFS\src\main.py", line 233, in create_home_tab
+    refresh_btn = ttk.Button(shader_btn_frame, text="Refresh Shaders", command=self.refresh_shaders)
+                                                                               ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GLFSApp' object has no attribute 'refresh_shaders'

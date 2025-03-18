@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLFS - GCE Loader For Shaders</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">
+                <i class="fas fa-cube"></i>
+                <h1>GLFS</h1>
+            </div>
+            <div class="theme-toggle">
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                <span id="theme-label">Dark Mode</span>
+            </div>
+        </header>
+
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="home">Home</button>
+            <button class="tab-btn" data-tab="settings">Settings</button>
+            <button class="tab-btn" data-tab="about">About</button>
+        </div>
+
+        <main class="app-content">
+            <!-- Home Tab -->
+            <div class="tab-content active" id="home-tab">
+                <div class="two-column-layout">
+                    <!-- Left Column - Shader List -->
+                    <div class="left-column">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Available Shaders</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="shader-list-container">
+                                    <ul id="shader-list" class="shader-list">
+                                        <!-- Shaders will be loaded here -->
+                                    </ul>
+                                </div>
+                                <div class="card-actions">
+                                    <button id="refresh-shaders-btn" class="btn btn-secondary">
+                                        <i class="fas fa-sync-alt"></i> Refresh
+                                    </button>
+                                    <button id="import-shader-btn" class="btn btn-info">
+                                        <i class="fas fa-file-import"></i> Import
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column - Controls -->
+                    <div class="right-column">
+                        <!-- Presets Card -->
+                        <div class="card" style="display: none;">
+                            <div class="card-header">
+                                <h2>Shader Presets</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="preset-select">Preset:</label>
+                                    <select id="preset-select" class="form-control">
+                                        <option value="">Select a preset</option>
+                                        <!-- Presets will be loaded here -->
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Launch Card -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Launch</h2>
+                            </div>
+                            <div class="card-body">
+                                <button id="launch-minecraft-btn" class="btn btn-primary btn-large">
+                                    <i class="fas fa-play"></i> Launch Minecraft
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Settings Tab -->
+            <div class="tab-content" id="settings-tab">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Application Settings</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="minecraft-path">Minecraft Bedrock Path:</label>
+                            <div class="input-with-button">
+                                <input type="text" id="minecraft-path" class="form-control" readonly>
+                                <button id="browse-minecraft-path-btn" class="btn btn-secondary">Browse</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="shaders-path">Shaders Path:</label>
+                            <div class="input-with-button">
+                                <input type="text" id="shaders-path" class="form-control" readonly>
+                                <button id="browse-shaders-path-btn" class="btn btn-secondary">Browse</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="brd-path">BetterRenderDragon Path:</label>
+                            <div class="input-with-button">
+                                <input type="text" id="brd-path" class="form-control" readonly>
+                                <button id="browse-brd-path-btn" class="btn btn-secondary">Browse</button>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button id="save-settings-btn" class="btn btn-primary">Save Settings</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Tab -->
+            <div class="tab-content" id="about-tab">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>About GLFS</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="about-content">
+                            <h3>GLFS - GCE Loader For Shaders</h3>
+                            <p>GLFS is a tool designed to help you manage and apply shaders to Minecraft Bedrock Edition using BetterRenderDragon.</p>
+                            
+                            <h4>Features:</h4>
+                            <ul>
+                                <li>Easy shader management and application</li>
+                                <li>Preset system to save your favorite shader configurations</li>
+                                <li>Automatic MaterialBinLoader installation and configuration</li>
+                                <li>Modern, user-friendly interface</li>
+                            </ul>
+                            
+                            <h4>How to use:</h4>
+                            <ol>
+                                <li>Set up your paths in the Settings tab</li>
+                                <li>Make sure MaterialBinLoader is properly installed</li>
+                                <li>Select a shader from the list and click "Apply Selected"</li>
+                                <li>Launch Minecraft and enjoy your shader!</li>
+                            </ol>
+
+                            <h4>Download more shaders at:</h4>
+                            <ol>
+                                <li>https://gcenet.netlify.app</li>
+                            </ol>
+                            
+                            <div class="version-info">
+                                <p>Version: 1.0.0</p>
+                                <p> 2025 GCE DEV Team</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <div id="status-bar" class="status-bar">Ready</div>
+        </footer>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

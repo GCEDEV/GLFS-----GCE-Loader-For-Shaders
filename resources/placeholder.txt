@@ -1,0 +1,4 @@
+This is a placeholder file. 
+You should replace this with actual resources like:
+- icon.ico - Application icon
+- logo.png - Application logo for the About tab

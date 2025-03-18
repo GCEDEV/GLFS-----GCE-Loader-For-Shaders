@@ -1,0 +1,12 @@
+flask>=2.0.0
+flask-cors>=3.0.10
+pillow>=9.0.0
+requests>=2.25.1
+Flask==2.0.1
+Werkzeug==2.0.1
+Jinja2==3.0.1
+MarkupSafe==2.0.1
+itsdangerous==2.0.1
+click==8.0.1
+PyQt5==5.15.9
+PyQtWebEngine==5.15.6
